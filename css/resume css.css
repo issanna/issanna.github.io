@@ -30,6 +30,9 @@ a:hover{
 	text-decoration: none;
 	font-size: 20px;
 }
+.date{
+	font-size: 22px;
+}
 
 .foto{
 	float: left;
@@ -51,15 +54,27 @@ div.aside h2{
 	padding-top: 10px;
 	text-align: left;
 }
-.btn {
-	float: left;
+nav.menu{
+	margin-top:  80px;
+	margin-left: 80px;
 	display: block;
-	margin-left: 180px;
-	margin-top: 50px;
-    width: 150px;
+	float: left;
+	width: 900px;
+	box-sizing: border-box;
+}
+ul.list{
+	display: block;
+	box-sizing: content-box;
+}
+
+ ul.list li{
+ 	display: inline-block;
+ 	margin: -2px; 	
+ }	
+ .btn {	
+	width: 250px;
     height: 50px;
     border: 1px solid #2e8d57;
-    border-radius: 10px;
     text-transform: uppercase;
     line-height: 50px;
     text-decoration: none;
@@ -67,6 +82,7 @@ div.aside h2{
     font-weight: bold;
     text-align: center;
     background: #009933;
+    padding: 25px;
 }
 .btn:hover{
 	border: 1px solid #f1f40f;
