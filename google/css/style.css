@@ -178,3 +178,17 @@ div.input input:hover{
 .clearfix{
 	clear: both;
 }
+.footer-links-l a{
+	color: #202124;
+	justify-content: flex-start;
+	margin-right: 5px;
+
+}
+.footer-links-r a{
+	display: inline-block;
+	color: #202124;
+	text-align: right;
+	margin-left: 5px;
+	
+	
+}
