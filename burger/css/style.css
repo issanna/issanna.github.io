@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+.pg_menu {
+	width: 1054px;
+	height: 530px;
+	padding-bottom: 25px;
+	padding-left: 48px;
+	display: block;
+	padding-top: 25PX;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#261d1f+0,473836+100 */
+	background: #261d1f; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #261d1f 0%, #473836 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #261d1f 0%,#473836 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #261d1f 0%,#473836 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#261d1f', endColorstr='#473836',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.picture {
+	width: 327px;
+	height: 392px;
+	display: block;
+	margin-right: -3px;
+	margin-top: -2px;
+	position: relative;
+	float: left;
+}
+.picture:before{
+	content: " ";
+	width: 11px;
+	height: 212px;
+	background-color: #000;
+	position: absolute;
+	left: -11px;
+	top: 157px;
+}
+.list_menu {
+	width: 612px;
+	height: 392px;
+	font-size: 14px;
+	padding-left: 43px;
+	display: block;
+	background: #fff;
+	margin-left: 5px;
+	float: left;
+	
+
+
+}
+h2{
+	width: 500px;
+	height: 82px;
+	display: block;
+	text-align: center;
+	padding: 40px 0px;
+}
+
+ul{
+	list-style-type: none;
+	
+
+
+}
+li{
+	display: block-inline;
+	float: left;
+	height: 57px;
+	width: 200px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border-bottom: 1px solid #d5d5d5;
+	margin: 12px 26px 17px 26px;
+	font-size: 16px;
+	line-height: 1.2;
+	padding-bottom:  15px;
+	position: relative;
+
+}
+span{
+	color:  #d5d5d5;
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding-bottom: 23px;
+
+
+}
+li:before{
+	content: " ";
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	background-color: #d5d5d5;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	bottom: -4px;
+	left: 93px;
+
+}
+
+
+footer{
+	display: block;
+	width: 1006px;
+	height: 112px;
+	float: left;
+	
+	bottom: 0px;
+	
+}
+
+.bt_menu{
+	display: block;
+	width: 176px;
+	height: 55px;
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right: 66px;
+	float: right;
+	
+	
+
+}
