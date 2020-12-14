@@ -57,7 +57,7 @@ div.aside h2{
 nav.menu{
 	margin-top:  80px;
 	margin-left: 80px;
-	display: block;
+	display: inline-block;
 	float: left;
 	width: 900px;
 	box-sizing: border-box;
@@ -88,4 +88,33 @@ ul.list{
 	border: 1px solid #f1f40f;
 	color: #009933;
 	background: #f1f40f;
+}
+footer{
+	margin-top:  80px;
+	margin-left: 80px;
+	display: inline-block;
+	float: left;
+	width: 900px;
+	box-sizing: border-box;
+}
+.soc-button  {
+
+display: inline-block;
+text-align: end;
+float: left;	
+width: 46px; 
+height: 46px; 
+background:url(../img/css_sprites.png)no-repeat; 
+}
+a.soc-button.fab{
+	background-position: -3px -3px;
+}
+a.soc-button.instagram {
+    background-position: -55px;
+}
+a.soc-button.skype {
+    background-position: -107px;
+}
+a.soc-button.gmail {
+    background-position: -160px;
 }

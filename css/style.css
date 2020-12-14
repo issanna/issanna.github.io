@@ -1,0 +1,278 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial, sans-serif;
+	line-height: 1.2;
+	font-size: 1em;
+	min-width: 320px;
+	max-width: 479px;
+	padding: 10px;
+
+}
+header{
+	display: flex;
+	color: #4b4b4b;
+}
+h1{
+	display: block;
+	position: relative;
+	width: 50%;
+
+}
+.menu {
+	position: absolute;
+    padding-top: 35px;
+    background: #648413;
+    opacity: 0;
+    visibility: hidden;
+    right: 0;
+    z-index: 1;
+}
+.icon__menu{
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	right: 5px;
+	top: 20px;
+}
+
+.icon__menu:before{
+	font-family:"Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f142";
+}
+.icon__menu:before,
+.icon__menu:after{	
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	color: #000;
+	top: 0;
+	left: 6px;
+	
+}
+.icon__menu:after{
+	font-family:"Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f00d";
+    visibility: hidden;
+    opacity: 0;
+ 
+}
+
+.icon__menu.active:after{	
+    visibility: visible;
+    opacity: 1;
+   z-index: 2; 
+   
+
+}
+ul.list {
+    list-style-type: none;
+}
+ul.list li:hover{
+	background: #4b4b4b;
+}
+.menu > ul li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #4b4b4b;
+    width: 100%;
+}
+
+a.btn {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+a.btn:hover{
+	color: #648413;
+}
+section > div{
+	margin-top: 10px;
+}
+.foto{
+	display: block;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background-image:url(../img/photo.jpg);
+	background-position: center;
+	background-size: cover;
+	
+}
+.phone, .email{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 20px;
+
+	
+	
+}
+.phone:before,
+.email:before{
+	position: absolute;
+  	top: 0;
+    left: 15px;
+
+}
+.phone:before{
+	font-family:"Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f095";	
+}
+.email:before{
+	font-family:"Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f0e0";	
+}
+.contact{
+	display: none;
+}
+h2{
+	color: #4b4b4b;
+	margin: 10px 0px;
+}
+ul.lang li{
+	margin-left: 15px;
+}
+.soc-button  {
+
+display: inline-block;
+text-align: end;
+float: left;	
+width: 46px; 
+height: 46px; 
+background:url(../img/css_sprites.png)no-repeat; 
+}
+a.soc-button.fab{
+	background-position: -3px -3px;
+}
+a.soc-button.instagram {
+    background-position: -55px;
+}
+a.soc-button.skype {
+    background-position: -107px;
+}
+a.soc-button.gmail {
+    background-position: -160px;
+}
+footer{
+	width: 100%;
+	height: 60px;
+	padding-top: 20px;
+}
+.active{
+
+	visibility: visible;
+	opacity: 1;
+	
+}
+@media screen and (min-width:480px) and (max-width:639px){
+	body{
+	min-width: 480px;
+	max-width: 639px;
+	padding: 20px;
+}
+	header{
+		background: #88c99d;
+	}
+	h1{
+		width: 70%;
+		text-align: center;
+	}
+	.icon__menu:before,
+	.icon__menu:after{
+		top:10px;
+		left: -16px;
+	}
+	.inform{
+		padding-top: 100px;
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%;
+	}
+	.phone:before,
+    .email:before{
+    	content: "";
+    	
+    }
+    .foto{
+    	width: 200px;
+         height: 200px;
+    	display: block;
+    }
+    .phone,
+    .email{
+    	display: block;
+    	width: 50%;
+    }
+    .contact{
+    	display: block;
+    	
+    	
+    }
+
+    section{ 
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    }
+   
+
+}
+@media screen and (min-width:640px) and (max-width:767px){
+	body{
+		min-width: 640px;
+		max-width: 767px;
+		padding: 20px;
+	}
+	.icon__menu:before,
+	.icon__menu:after{
+		content: " ";
+	}
+	.menu{
+		visibility: visible;
+		opacity: 1;
+		width: 50%;
+		background: #fff;
+		
+	}
+	.menu > ul li {
+  	  display: inline-block;
+  	  border-bottom: 1px solid #4b4b4b;
+ 	  width:calc(50% - 10px);
+ 	  margin: 5px;
+ 	  border: 1px solid #4b4b4b;
+ 	   background: #648413;
+ 	}
+    .list{
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    	
+    }
+ 	.phone:before,
+    .email:before{
+    	content: "";
+    	
+    }
+   .phone,
+    .email{
+    	display: block;
+    	width: 50%;
+    }
+    .inform{
+    	display: block;
+    	width: 50%;
+
+
+    }
+    .contact{
+	display:block;
+	width: 50%;
+}
+}
