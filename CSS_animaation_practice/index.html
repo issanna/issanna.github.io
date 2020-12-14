@@ -14,12 +14,36 @@
         
         <h2>Concert Map</h2>
           <form id="form" action="" method="post">
-            <h3>Information for booking tickets</h3>
-          
-                <input type="text" name="username" placeholder="Name">
-                <input type="tel" name="Phone_number" placeholder="Phone_number">
-                <input type="email" name="E-mail" placeholder="E-mail">
-            
+            <fieldset>
+            <h3 id="buttonFive">Information for booking tickets</h3>
+                <div class="field-group">
+                    <input type="text" name="username" placeholder="Name" required="required" id="name">
+                    <label for="name">Name</label>
+                </div>
+                <div  class="field-group"> 
+                    <input type="tel" name="Phone_number" placeholder="Phone_number" id="number" required="required">
+                    <label for="email">Phone number</label>
+                </div>
+                <div  class="field-group"> 
+                     <input type="email" name="E-mail" placeholder="E-mail" id="email">
+                     <label for="email">E-mail</label>
+                 </div>    
+
+                 <label>
+                     Number of tickets
+                     <select name="quantity" required>
+                         <option value="1" selected>1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5</option>
+                        </select>
+                 </label>
+                 <label>
+                    Comments
+                 <textarea name="comments"></textarea>
+                 </label>
+            </fieldset>
           <input type="submit" name="submit" value="Send"></input> 
         </form>
         

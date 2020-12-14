@@ -78,8 +78,8 @@ h2 {
 .pin:after{
     content: " ";
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 54%;
+    top: 54%;
     display: block;
     border-radius: 50%;
     border: 1px solid #f3244a;
@@ -185,13 +185,18 @@ form{
     width: 40%;
     height: 60% ;
     background-color: #f3244a;
-    position: relative;
+    position: absolute;
     left: 30%;
     top: 0;
     z-index: 10;
     visibility: hidden;
     opacity: 0;
 }
+.field-group{
+    position: relative;
+
+}
+
  h3{
     display: flex;
     width: 300px;
@@ -200,16 +205,55 @@ form{
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+    position: relative;
+ }
+ h3:after{
+    content: "\00d7";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left:130%;
+    top:10px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+ }
+ h3:hover:after{
+    cursor: pointer;
+
  }
 
 input{
-    width: 200px;
+    width: 100%;
     display: block;
     height: 30px;
     font-size: 16px;
      margin: 5px 0;
+     position: relative;
    
 }
+input:focus {
+    outline: 0;
+}
+input + label{
+    min-width: 105px;
+    text-align: center;
+    position: absolute;
+    top: 34%;
+    left: 65%;
+    transition: 0.5s;
+    padding: 3px 8px;
+    color: #676767;
+    
+}
+input:placeholder-shown + label{
+    opacity: 0;
+    transform: translate(-100%);
+}
+
 .active{
     visibility: visible;
     opacity: 1;
@@ -227,3 +271,7 @@ input[type="submit"]:hover{
     color: #fff;
     background: #c0c0c0;
 }
+textarea {
+    ;
+}
+

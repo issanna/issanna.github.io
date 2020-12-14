@@ -10,6 +10,9 @@ buttonThree.onclick=function(){
 buttonFour.onclick=function(){
 	form.classList.toggle('active');
 }
+buttonFive.onclick=function(){
+	form.classList.toggle('active');
+}
 document.querySelectorAll('.button').onclick=function(){
 	
 }
