@@ -239,6 +239,7 @@ footer{
 		opacity: 1;
 		width: 50%;
 		background: #fff;
+		position: relative;
 		
 	}
 	.menu > ul li {
@@ -282,7 +283,62 @@ footer{
 		max-width: 1024px;
 		padding: 5px;
 	}
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	h1{
+		width: 100%;
+		display: block;
+	}
+	.foto{
+		display: block;
+	}
+	.icon__menu:before,
+	.icon__menu:after{
+		content: " ";
+	}
 	.menu{
+		display: block;
 		visibility: visible;
+		opacity: 1;
+		width: 50%;
+		background: #fff;
+		position: relative;
+		
+	}
+	.menu > ul li {
+  	  display: inline-block;
+  	  border-bottom: 1px solid #4b4b4b;
+ 	  width:calc(50% - 10px);
+ 	  margin: 5px;
+ 	  border: 1px solid #4b4b4b;
+ 	   background: #648413;
+ 	}
+    .list{
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    	
+    }
+ 	.phone:before,
+    .email:before{
+    	content: "";
+    	
+    }
+   .phone,
+    .email{
+    	display: block;
+    	width: 50%;
+    }
+    .inform{
+    	display: block;
+    	width: 50%;
+
+
+    }
+    .contact{
+	display:block;
+	width: 50%;
 	}
 }
